@@ -1,0 +1,1 @@
+<p>Thank you for your purchase, we will contact you as soon as possible. If you have problems, please contact us via the following information:</p>
