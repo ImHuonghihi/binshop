@@ -12,7 +12,7 @@
 ?>
 <div class="menu">
 			<ul class="list_menu">
-				<li><a href="index.php">Trang chủ</a></li>
+				<li><a href="index.php">Homepage</a></li>
 				<?php 
 				while($row_danhmuc = mysqli_fetch_array($query_danhmuc)){
 				?>
@@ -20,32 +20,31 @@
 				<?php
 				} 
 				?>
-				<li><a href="index.php?quanly=giohang">Giỏ hàng</a></li>
+				
+				<li><a href="index.php?quanly=tintuc">News</a></li>
+				<li><a href="index.php?quanly=giohang">Cart</a></li>
+				<li><a href="index.php?quanly=lienhe">Contact</a></li>
 				<?php
 				if(isset($_SESSION['dangky'])){ 
 
 				?>
-				<li><a href="index.php?dangxuat=1">Đăng xuất</a></li>
-				<li><a href="index.php?quanly=thaydoimatkhau">Thay đổi mật khẩu</a></li>
+				<li><a href="index.php?dangxuat=1">Logout</a></li>
+				<li><a href="index.php?quanly=thaydoimatkhau">Change password</a></li>
 				<?php
 				}else{ 
 				?>
-				<li><a href="index.php?quanly=dangky">Đăng ký</a></li>
+				<li><a href="index.php?quanly=dangky">Register</a></li>
 				<?php
 				} 
 				?>
 				
-
-				<li><a href="index.php?quanly=tintuc">Tin tức</a></li>
-				<li><a href="index.php?quanly=lienhe">Liên hệ</a></li>
-				
 					
 				
 			</ul>
-			<p>
-				<form action="index.php?quanly=timkiem" method="POST">
-					<input type="text" placeholder="Tìm kiếm sản phẩm..." name="tukhoa">
-					<input type="submit" name="timkiem" value="Tìm kiếm">
-				</form>
-			</p>
+			<p style="text-align: right;">
+        <form action="index.php?quanly=timkiem" method="POST">
+            <input type="text" placeholder="Tìm kiếm sản phẩm..." name="tukhoa">
+            <input type="submit" name="timkiem" value="Tìm kiếm">
+        </form>
+    </p>
 		</div>

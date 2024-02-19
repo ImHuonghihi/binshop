@@ -17,22 +17,20 @@
 		}
 	} 
 ?>
+<p style="font-size: 20px; margin-bottom: 10px;">Login</p>
+
 <form action="" autocomplete="off" method="POST">
 		<table border="1" width="50%" class="table-login" style="text-align: center;border-collapse: collapse;">
 			<tr>
-				<td colspan="2"><h3>Đăng nhập khách hàng</h3></td>
+			<td style="padding: 5px;">User</td>
+			<td style="padding: 5px;"><input type="text" style="width: 95%;" name="email"></td>
 			</tr>
 			<tr>
-				<td>Tài khoản</td>
-				<td><input type="text" size="50" name="email" placeholder="Email..."></td>
+				<td style="padding: 5px;">Password</td>
+				<td style="padding: 5px;"><input type="password" style="width: 95%;" name="password"></td>
 			</tr>
-			<tr>
-				<td>Mật khẩu</td>
-				<td><input type="password" size="50" name="password" placeholder="Mật khẩu..."></td>
-			</tr>
-			<tr>
-				
-				<td colspan="2"><input type="submit" name="dangnhap" value="Đăng nhập"></td>
-			</tr>
+			<td colspan="2" style="text-align: center;">
+        <input type="submit" name="dangnhap" value="Log in" style="padding: 10px; background-color: #4CAF50; color: #fff; border: none; cursor: pointer; margin: 5px;">
+    </td>	
 	</table>
 	</form>

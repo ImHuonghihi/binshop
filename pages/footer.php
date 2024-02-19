@@ -2,7 +2,7 @@
 <div class="footer">
     <style>
         .button1 {
-            background-color:   #2CAFFF; /* Green */
+            background-color:   #2CAFFF;
             border-radius: 10px;
             border: none;
             color: #FFFFFF;
