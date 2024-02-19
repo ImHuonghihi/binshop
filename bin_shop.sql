@@ -39,8 +39,8 @@ CREATE TABLE `tbl_admin` (
 
 INSERT INTO `tbl_admin` (`id_admin`, `username`, `password`, `admin_status`) VALUES
 (1, 'admin', '25f9e794323b453885f5181f1b624d0b', 1),
-(2, 'binadmin' ,  '25f9e794323b453885f5181f1b624d0b', 2);
-(3, 'newadmin' ,  '0794cdac84dacfb9dfa15d6f2233f9c0', 13;
+(2, 'binadmin' ,  '25f9e794323b453885f5181f1b624d0b', 2),
+(3, 'newadmin' ,  '0794cdac84dacfb9dfa15d6f2233f9c0', 13);
 
 
 -- --------------------------------------------------------
@@ -134,10 +134,11 @@ CREATE TABLE `tbl_danhmuc` (
 --
 
 INSERT INTO `tbl_danhmuc` (`id_danhmuc`, `tendanhmuc`, `thutu`) VALUES
-(1, 'Ốp lưng đẹp', 1),
-(3, 'Màn hình điện thoại ', 3),
-(4, 'Kính cường lực', 4),
-(5, 'Phụ kiện trang trí', 5);
+(1, 'Apple', 1),
+(2, 'Vivo', 2),
+(3, 'Samsung', 3),
+(4, 'Oppo', 4),
+(5, 'Xiaomi', 5);
 
 -- --------------------------------------------------------
 

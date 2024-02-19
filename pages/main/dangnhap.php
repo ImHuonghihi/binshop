@@ -22,7 +22,7 @@
 <form action="" autocomplete="off" method="POST">
 		<table border="1" width="50%" class="table-login" style="text-align: center;border-collapse: collapse;">
 			<tr>
-			<td style="padding: 5px;">User</td>
+			<td style="padding: 5px;">Email</td>
 			<td style="padding: 5px;"><input type="text" style="width: 95%;" name="email"></td>
 			</tr>
 			<tr>
