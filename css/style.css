@@ -42,7 +42,7 @@ input.themgiohang {
     cursor: pointer;
 }
 .header{
-	background-image: url("../images/banner1.jpg");
+	background-image: url("../images/header.png");
 	background-repeat: no-repeat;
 	background-size: 100% 180px;
 	border:1px solid #ff80ff;
