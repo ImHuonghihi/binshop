@@ -42,10 +42,10 @@ input.themgiohang {
     cursor: pointer;
 }
 .header{
-	background-image: url("../images/header.png");
+	background-image: url("../images/header.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 180px;
-	border:1px solid #ff80ff;
+	border:1px solid #1aff8c;
 	height: 180px;
 	width: 100%;
 	
@@ -117,13 +117,12 @@ ul.list_sidebar li {
     padding: 5px;
    
 }
-.maincontent{
-	
-	height: auto;
-	width: 79%;
-	margin-top:5px;
-	margin-left:5px;
-	float: right;
+.maincontent {
+    height: auto;
+    width: 84%; /* Điều chỉnh chiều rộng của maincontent */
+    margin-top: 5px;
+    margin-left: 5px;
+    float: right;
 }
 ul.product_list {
     padding: 90;
@@ -133,7 +132,6 @@ ul.product_list {
 }
 ul.product_list li img {
     height: 190px;
-
 }
 ul.product_list li {
     width: 19%;
@@ -143,6 +141,7 @@ ul.product_list li {
    
     height: 300px;
 }
+
 ul.product_list li a {
     text-decoration: none;
 }
@@ -162,9 +161,9 @@ p.title_product {
     font-weight: bold;
 }
 .footer{
-	border:1px solid #ff1a8c;
+	border:1px solid ;
 	height: 150px;
-	width: 100%;
+	width: 99.9%;
 	background: #2F80C7;
 }
 p.footer_copyright {

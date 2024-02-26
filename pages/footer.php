@@ -30,9 +30,9 @@
             margin-bottom: 5px; /* Thay đổi khoảng cách giữa các dòng trong danh sách */
         }
     </style>
-    <p class="footer_copyright">Copyright by NguyenQuangDong developer 8668</p>
+    <p class="footer_copyright">Copyright by NguyenHoangSon developer 8668</p>
     <ul class="button1">
         <li>Phone: 0987654321</li>
-        <li>Email contact: nguyenquangdong@gmail.com</li>
+        <li>Email contact: nguyenhoanson@gmail.com</li>
     </ul>
 </div>

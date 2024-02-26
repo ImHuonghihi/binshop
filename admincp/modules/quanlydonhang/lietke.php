@@ -1,4 +1,4 @@
-<p>Liệt kê đơn hàng</p>
+<p style="font-size: 18px; font-weight: bold; margin-bottom: 10px;">Liệt kê đơn hàng</p>
 <?php
 	$sql_lietke_dh = "SELECT * FROM tbl_cart,tbl_dangky WHERE tbl_cart.id_khachhang=tbl_dangky.id_dangky ORDER BY tbl_cart.id_cart DESC";
 	$query_lietke_dh = mysqli_query($mysqli,$sql_lietke_dh);

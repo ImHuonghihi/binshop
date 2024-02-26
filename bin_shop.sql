@@ -114,7 +114,6 @@ CREATE TABLE `tbl_dangky` (
 --
 
 INSERT INTO `tbl_dangky` (`id_dangky`, `tenkhachhang`, `email`, `diachi`, `matkhau`, `dienthoai`) VALUES
-(1, 'Thanh Bình', 'binhntgch190837@fpt.edu.vn', 'ecohome2 ', '25f9e794323b453885f5181f1b624d0b', '0123456789 '),
 (8, 'abcdef', 'maxime80@example.net', 'landmark72 giao hang', '25f9e794323b453885f5181f1b624d0b', '0123456789');
 
 -- --------------------------------------------------------
@@ -163,15 +162,28 @@ CREATE TABLE `tbl_sanpham` (
 -- Đang đổ dữ liệu cho bảng `tbl_sanpham`
 --
 
-INSERT INTO `tbl_sanpham` (`id_sanpham`, `tensanpham`, `masp`, `giasp`, `soluong`, `hinhanh`, `tomtat`, `noidung`, `tinhtrang`, `id_danhmuc`) VALUES
-(6, 'ốp lưng iphone12', '001', '250000', 3, 'tainghe2.png', 'dasdas', 'dsadadasdas', 4, 1),
-(7, 'tai nghe i12', '002', '350000', 10, 'tainghei12.jpg', 'dasdasdas', 'dasdadasdas', 2, 3),
-(8, 'Kính cường lực', '003', '750000', 10, 'kinhcuongluc.png', 'dasd', 'asdsadasdas', 3, 4),
-(9, 'kính loại 1', '004', '250000', 3, 'kinhloai1.png', 'dsad', 'asdasdasdas', 5, 4),
-(10, 'Dây ngọc 1', '005', '99000', 10, 'dayngoc.png', 'fsdfs', 'fsdfdsfsdf', 2, 5),
-(11, 'ốp lung ipX', '001', '250000', 3, 'oplungiphoneX.png', 'dsdad', 'sadsadasd', 1, 1),
-(12, 'ốp lung 1', '001', '250000', 3, 'oplung1.png', 'dsadasd', 'asdasdas', 1, 1);
+-- INSERT INTO `tbl_sanpham` (`id_sanpham`, `tensanpham`, `masp`, `giasp`, `soluong`, `hinhanh`, `tomtat`, `noidung`, `tinhtrang`, `id_danhmuc`) VALUES
+-- (6, 'Iphone', '001', '250000', 3, 'i11.png', 'dasdas', 'dsadadasdas', 4, 1),
+-- (7, 'Redmi Note 11 Pro', '002', '350000', 10, 'i14.jpg', 'dasdasdas', 'dasdadasdas', 2, 3),
+-- (8, 'Redmi Note 11 Pro', '003', '750000', 10, 'i15.png', 'dasd', 'asdsadasdas', 3, 4),
+-- (9, 'Redmi Note 11 Pro', '004', '250000', 3, 'iphone12.png', 'dsad', 'asdasdasdas', 5, 4),
+-- (10, 'Redmi Note 11 Pro', '005', '99000', 10, 'vivo.jpg', 'fsdfs', 'fsdfdsfsdf', 2, 5),
+-- (11, 'Redmi Note 11 Pro', '001', '250000', 3, 's29.jpg', 'dsdad', 'sadsadasd', 1, 1),
+-- (12, 'ốp lung 1', '001', '250000', 3, 'Oppo1.jpg', 'dsadasd', 'asdasdas', 1, 1);
 
+INSERT INTO `tbl_sanpham` 
+    (`id_sanpham`, `tensanpham`, `masp`, `giasp`, `soluong`, `hinhanh`, `tomtat`, `noidung`, `tinhtrang`, `id_danhmuc`) 
+VALUES
+    (6, 'MacBook Pro', 'MBP001', 30000000, 5, 'i11.png', 'Laptop chuyên đồ họa', 'MacBook Pro là dòng laptop chuyên đồ họa của Apple với hiệu suất cao.', 1, 1),
+    (7, 'Vivo X50 Pro', 'X50P001', 15000000, 8, 'vivo.jpg', 'Camera gimbal chống rung', 'Vivo X50 Pro là chiếc điện thoại với camera gimbal chống rung, chụp ảnh và quay video siêu ổn định.', 2, 2),
+    (8, 'Samsung Galaxy Tab S7', 'S7TAB001', 12000000, 10, 's29.jpg', 'Tablet cao cấp', 'Samsung Galaxy Tab S7 là một tablet cao cấp với màn hình AMOLED và bút S Pen.', 3, 3),
+    (9, 'Oppo Reno6', 'R6-001', 12000000, 7, 'oppo2.jpg', 'Máy ảnh chất lượng cao', 'Oppo Reno6 là chiếc điện thoại tập trung vào chụp ảnh với camera chất lượng cao.', 4, 4),
+    (10, 'Xiaomi Mi 11', 'Mi11-001', 16000000, 12, 'x12.jpg', 'Chip Snapdragon 888', 'Xiaomi Mi 11 là một chiếc điện thoại cao cấp với chip Snapdragon 888 và màn hình 2K.', 5, 5),
+(13, 'iPhone 13 Pro Max', '006', '29990000', 5, 'i14.jpg', 'Flagship mới nhất của Apple', 'iPhone 13 Pro Max là chiếc điện thoại mạnh mẽ với camera chất lượng cao và màn hình OLED Super Retina XDR.', 1, 1),
+(14, 'Vivo X70 Pro', '007', '27990000', 8, 'vivo1.jpg', 'Sự kết hợp hoàn hảo giữa hiệu suất và camera', 'Vivo X70 Pro mang lại trải nghiệm chụp ảnh chuyên nghiệp với hệ thống camera Zeiss và hiệu suất ổn định.', 1, 2),
+(15, 'Samsung Galaxy Z Fold 3', '008', '36990000', 3, 'x13.jpg', 'Smartphone gập màn hình đỉnh cao', 'Galaxy Z Fold 3 là một sự đổi mới trong thiết kế với khả năng gập màn hình, mang lại trải nghiệm đa nhiệm độc đáo.', 1, 3),
+(16, 'Oppo Find X4 Pro', '009', '42990000', 7, 'Oppo1.jpg', 'Sự đẳng cấp trong thiết kế và hiệu suất', 'Oppo Find X4 Pro là một siêu phẩm với thiết kế sang trọng và hiệu suất mạnh mẽ.', 1, 4),
+(17, 'Xiaomi Mi 11 Ultra', '010', '32990000', 6, 'xiao.jpg', 'Camera siêu zoom 120x', 'Mi 11 Ultra là chiếc điện thoại với camera siêu zoom, màn hình AMOLED, và hiệu suất ổn định.', 1, 5);
 --
 -- Chỉ mục cho các bảng đã đổ
 --

@@ -25,8 +25,8 @@
   </tr>
   <?php
   if(isset($_SESSION['cart'])){
-  	$i = 0;
-  	$tongtien = 0;
+    $i = 0;
+    $tongtien = 0;
   	foreach($_SESSION['cart'] as $cart_item){
   		$thanhtien = $cart_item['soluong']*$cart_item['giasp'];
   		$tongtien+=$thanhtien;
@@ -58,7 +58,7 @@
       <?php
         if(isset($_SESSION['dangky'])){
           ?>
-           <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
+          <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
       <?php
         }else{
       ?>
@@ -67,7 +67,7 @@
         }
       ?>
       
-     
+    
 
 
     </td>

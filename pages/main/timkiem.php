@@ -1,7 +1,13 @@
 <?php
+
+// Kiểm tra xem nút tìm kiếm có được nhấn hay không. Nếu có, lấy giá trị từ khóa tìm kiếm từ biến POST.
     if (isset($_POST['timkiem'])) {
         $tukhoa = $_POST['tukhoa'];
     }
+
+    // Truy vấn các sản phẩm dựa trên từ khóa tìm kiếm ($tukhoa).
+// Kết hợp thông tin từ bảng tbl_sanpham và tbl_danhmuc thông qua điều kiện liên kết (tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc).
+// Sử dụng LIKE để tìm kiếm trong tên sản phẩm.
     $sql_pro = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc AND tbl_sanpham.tensanpham LIKE '%" . $tukhoa . "%'";
     $query_pro = mysqli_query($mysqli, $sql_pro);
 
@@ -11,6 +17,10 @@
 		$style_img = "max-width: 100%; height: auto;";
     $style_title_product = "font-size: 16px; font-weight: bold; margin: 5px 0;";
     $style_price_product = "font-size: 14px; color: red; margin: 5px 0;";
+
+// Hiển thị thông báo về từ khóa tìm kiếm.
+//Sử dụng vòng lặp để duyệt qua các sản phẩm tìm được và hiển thị thông tin của mỗi sản phẩm.
+//Sử dụng CSS để thiết kế giao diện hiển thị sản phẩm và định dạng thông tin.
 
     echo '<h3 style="font-size: 28px; text-align: center; color: #333; margin: 20px 0;">Từ khoá tìm kiếm : ' . $_POST['tukhoa'] . '</h3>';
     echo '<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: space-around;">';

@@ -13,7 +13,7 @@
  } 
 ?>
 <body>
-	<h3 class="title_admin">Welcome to AdminCP</h3>
+	<h3 class="title_admin">Welcome to Admin</h3>
 	<div class="wrapper">
 	<?php 
 			include("config/config.php");
