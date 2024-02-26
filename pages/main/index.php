@@ -1,18 +1,20 @@
 <?php
-	if(isset($_GET['trang'])){
-		$page = $_GET['trang'];
-	}else{
-		$page = 1;
-	}
-	if($page == '' || $page == 1){
-		$begin = 0;
-	}else{
-		$begin = ($page*4)-4;
-	}
-	$sql_pro = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sanpham DESC LIMIT $begin,4";
-	$query_pro = mysqli_query($mysqli,$sql_pro);
-	
+    if(isset($_GET['trang'])){
+        $page = $_GET['trang'];
+    } else {
+        $page = 1;
+    }
+    
+    if($page == '' || $page == 1){
+        $begin = 0;
+    } else {
+        $begin = ($page * 8) - 8;
+    }
+    
+    $sql_pro = "SELECT * FROM tbl_sanpham, tbl_danhmuc WHERE tbl_sanpham.id_danhmuc = tbl_danhmuc.id_danhmuc ORDER BY tbl_sanpham.id_sanpham DESC LIMIT $begin,8";
+    $query_pro = mysqli_query($mysqli, $sql_pro);
 ?>
+
 <h3>New products</h3>
 <div class="product_rows">
     <ul class="product_list">
@@ -20,7 +22,7 @@
         echo '<ul style="padding: 0; margin: 0; list-style: none; display: flex; flex-wrap: wrap;">';
 
         while($row = mysqli_fetch_array($query_pro)){ 
-            echo '<li style="flex: 0 0 25% 25%; box-sizing: border-box; padding: 10px; text-align: center paddingBottom: 20px">';
+            echo '<li style="width: 25%; box-sizing: border-box; padding: 10px; text-align: center; height: 350px;">';
             echo '<a href="index.php?quanly=sanpham&id=' . $row['id_sanpham'] . '" style="text-decoration: none; color: black; display: block;">';
             echo '<img src="admincp/modules/quanlysp/uploads/' . $row['hinhanh'] . '" style="width: 80%; height: auto; margin: 0 auto;">';
             echo '<p class="title_product" style="margin: 10px 0 5px; text-align: center; color: black;">' . $row['tensanpham'] . '</p>';
@@ -33,6 +35,7 @@
         ?>
     </ul>
 </div>
+
 
 
 
@@ -62,7 +65,7 @@
 				<?php
 				$sql_trang = mysqli_query($mysqli,"SELECT * FROM tbl_sanpham");
 				$row_count = mysqli_num_rows($sql_trang);  
-				$trang = ceil($row_count/3);
+				$trang = ceil($row_count/8);
 				?>
 				<p>Trang hiện tại : <?php echo $page ?>/<?php echo $trang ?> </p>
 				

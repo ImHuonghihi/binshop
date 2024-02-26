@@ -1,4 +1,4 @@
-<p>Product detail</p>
+<h3>Product detail</h3>
 <?php
 	$sql_chitiet = "SELECT * FROM tbl_sanpham,tbl_danhmuc WHERE tbl_sanpham.id_danhmuc=tbl_danhmuc.id_danhmuc AND tbl_sanpham.id_sanpham='$_GET[id]' LIMIT 1";
 	$query_chitiet = mysqli_query($mysqli,$sql_chitiet);

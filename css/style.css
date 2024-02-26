@@ -45,16 +45,16 @@ input.themgiohang {
 	background-image: url("../images/header.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 180px;
-	border:1px solid #1aff8c;
+	border:1px solid #2A3A88;
 	height: 180px;
 	width: 100%;
 	
 }
 .menu{
-	border:1px solid #1aff8c;
+	border:1px solid  #2A3A88;;
 	height: 50px;
-	width: 100%;
-	background: #00e6ac;
+	width: 99.97%;
+	background:   #ddd;
 }
 ul.list_menu {
     padding: 0;
@@ -72,7 +72,7 @@ ul.list_menu li:hover {
 ul.list_menu li a {
     text-decoration: none;
     text-align: center;
-    color: #3333ff;
+    
 }
 ul.list_menu li {
     float: left;
@@ -82,7 +82,7 @@ ul.list_menu li {
    
 }
 #main{
-	border:1px solid  #00ff80;
+	border:1px solid ;
 	height: auto;
 	width: 100%;
 }
@@ -138,7 +138,6 @@ ul.product_list li {
     border: 1px solid #ddd;
     margin: 5px;
     float: left;
-   
     height: 300px;
 }
 
@@ -163,7 +162,7 @@ p.title_product {
 .footer{
 	border:1px solid ;
 	height: 150px;
-	width: 99.9%;
+	width: 99.89%;
 	background: #2F80C7;
 }
 p.footer_copyright {

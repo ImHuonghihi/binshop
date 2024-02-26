@@ -1,4 +1,4 @@
-<p>Liên hệ</p>
+<h3>Contact</h3>
 <ul>
 						<li><a href="https://www.facebook.com/fkinlonelyrichboiz">Facebook (admin)</a></li>
 						<li><a href="https://infinityfree.net/">serve</a></li>

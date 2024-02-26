@@ -1,4 +1,4 @@
-<p>Sales</p>
+<h3>Sales</h3>
 <ul>
 	<li> <a href="https://www.thegioididong.com/dtdd/iphone-12-pro-max">iphone12</a></li>
 	<li> <a href="https://www.thegioididong.com/dtdd/realme-8">Realme8</a></li>

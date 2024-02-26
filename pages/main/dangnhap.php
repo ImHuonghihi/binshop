@@ -17,7 +17,7 @@
 		}
 	} 
 ?>
-<p style="font-size: 20px; margin-bottom: 10px;">Login</p>
+<h3 style="font-size: 20px; margin-bottom: 10px;">Login</h3>
 
 <form action="" autocomplete="off" method="POST">
 		<table border="1" width="50%" class="table-login" style="text-align: center;border-collapse: collapse;">

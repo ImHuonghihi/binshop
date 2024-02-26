@@ -1,11 +1,11 @@
-<p>Giỏ hàng 
+<h3>Cart 
   <?php
   if(isset($_SESSION['dangky'])){
     echo 'xin chào: '.'<span style="color:red">'.$_SESSION['dangky'].'</span>';
    
   } 
   ?>
-</p>
+</h3>
 <?php
 	if(isset($_SESSION['cart'])){
 		

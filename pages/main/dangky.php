@@ -22,7 +22,7 @@ if (isset($_POST['dangky'])) {
 }
 ?>
 
-<p style="font-size: 20px; margin-bottom: 10px;">Member registration</p>
+<h3 style="font-size: 20px; margin-bottom: 10px;">Member registration</h3>
 <form action="" method="POST">
     <table class="dangky" border="1" width="50%" style="border-collapse: collapse;">
         <tr>
