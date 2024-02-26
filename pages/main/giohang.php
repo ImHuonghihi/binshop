@@ -1,3 +1,4 @@
+<div class="main-content">
 <h3>Cart 
   <?php
   if(isset($_SESSION['dangky'])){
@@ -11,7 +12,7 @@
 		
 	}
 ?>
-<table style="width:100%;text-align: center;border-collapse: collapse;" border="1">
+<table style="width:100%;text-align: center;border-collapse: collapse; margin: 0 auto; vertical-align: middle;" border="1">
   <tr>
     <th>Id</th>
     <th>Mã sp</th>
@@ -43,26 +44,26 @@
     	<a href="pages/main/themgiohang.php?tru=<?php echo $cart_item['id'] ?>"><i class="fa fa-minus fa-style" aria-hidden="true"></i></a>
 
     </td>
-    <td><?php echo number_format($cart_item['giasp'],0,',','.').'vnđ'; ?></td>
-    <td><?php echo number_format($thanhtien,0,',','.').'vnđ' ?></td>
-    <td><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Xoá</a></td>
+    <td><?php echo number_format($cart_item['giasp'],0,',','.').' VND'; ?></td>
+    <td><?php echo number_format($thanhtien,0,',','.').' VND' ?></td>
+    <td><a href="pages/main/themgiohang.php?xoa=<?php echo $cart_item['id'] ?>">Delete</a></td>
   </tr>
   <?php
   	}
   ?>
    <tr>
     <td colspan="8">
-    	<p style="float: left;">Tổng tiền: <?php echo number_format($tongtien,0,',','.').'vnđ' ?></p><br/>
-    	<p style="float: right;"><a href="pages/main/themgiohang.php?xoatatca=1">Xoá tất cả</a></p>
+    	<p style="float: left; padding: 10px">Total payment: <?php echo number_format($tongtien,0,',','.').'vnđ' ?></p><br/>
+    	<p style="float: right;padding: 10px"><a href="pages/main/themgiohang.php?xoatatca=1">Delete all</a></p>
       <div style="clear: both;"></div>
       <?php
         if(isset($_SESSION['dangky'])){
           ?>
-          <p><a href="pages/main/thanhtoan.php">Đặt hàng</a></p>
+          <p><a href="pages/main/thanhtoan.php">Order</a></p>
       <?php
         }else{
       ?>
-        <p><a href="index.php?quanly=dangky">Đăng lý đặt hàng</a></p>
+        <p><a href="index.php?quanly=dangky">Regisrer for order</a></p>
       <?php
         }
       ?>
@@ -86,3 +87,4 @@
   ?>
  
 </table>
+</div>

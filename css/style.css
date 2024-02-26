@@ -117,6 +117,11 @@ ul.list_sidebar li {
     padding: 5px;
    
 }
+.main-content {
+    margin: 0 auto;
+    width: 80%; /* Điều chỉnh chiều rộng theo nhu cầu của bạn */
+}
+
 .maincontent {
     height: auto;
     width: 84%; /* Điều chỉnh chiều rộng của maincontent */
